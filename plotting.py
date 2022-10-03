@@ -3,8 +3,6 @@ from bokeh.plotting import figure
 from bokeh.io import output_file, show
 from bokeh.models import HoverTool, ColumnDataSource
 
-# df["Start_string"] = df["Start"].dt.strftime("%Y-%m-%d %H:%M:%S")
-# df["End_string"] = df["End"].dt.strftime("%Y-%m-%d %H:%M:%S")
 cds = ColumnDataSource(df)
 p = figure(x_axis_type = "datetime", width = 500, height = 250, sizing_mode = "stretch_both")
 p.title.text = "Motion Graph"
